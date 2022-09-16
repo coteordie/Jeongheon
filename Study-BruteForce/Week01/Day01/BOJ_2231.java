@@ -19,14 +19,13 @@ public class BOJ_2231 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		int N = Integer.parseInt(br.readLine());
-		
-		// N자릿수는 M자릿수보다 같거나 하나 클 수 있다. 
+
 		int len = (int) Math.log10(N) + 1;
 		
 		ArrayList<Integer> MList = new ArrayList<Integer>();
 		
-		int M = (int) Math.pow(10, len - 1); 
-		while(M <= (int) Math.pow(10, len + 1)) {
+		int M = N - (len * 9); 
+		while(M <= N) {
 			int sum = 0;
 			for(int i = len; i > 0; i--) {
 				sum += ((M % Math.pow(10, i)) / Math.pow(10, i - 1));
