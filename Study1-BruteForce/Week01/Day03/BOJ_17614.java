@@ -23,9 +23,9 @@ public class BOJ_17614 {
 		int cnt = 0; // 박수 횟수
 		
 		for(int i = 1; i <= inputNum; i++) {
-			String[] strArr = Integer.toString(i).split("");
-			for(int j = 0; j < strArr.length; j++) {
-				int num = Integer.parseInt(strArr[j]);
+			int len = (int) Math.log10(inputNum) + 1;
+			for(int j = len; j > 0; j--) {
+				int num = (int) (i % Math.pow(10, j) / Math.pow(10, j - 1));
 				if(num != 0 && num % 3 == 0) cnt++;
 			}
 		}
