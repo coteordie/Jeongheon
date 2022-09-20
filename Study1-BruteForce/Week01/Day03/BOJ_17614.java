@@ -22,14 +22,24 @@ public class BOJ_17614 {
 		
 		int cnt = 0; // 박수 횟수
 		
+//		for(int i = 1; i <= inputNum; i++) {
+//			int len = (int) Math.log10(inputNum) + 1;
+//			for(int j = len; j > 0; j--) {
+//				int num = (int) (i % Math.pow(10, j) / Math.pow(10, j - 1));
+//				if(num != 0 && num % 3 == 0) cnt++;
+//			}
+//		}
+		// 연산속도 개선
 		for(int i = 1; i <= inputNum; i++) {
-			int len = (int) Math.log10(inputNum) + 1;
-			for(int j = len; j > 0; j--) {
-				int num = (int) (i % Math.pow(10, j) / Math.pow(10, j - 1));
-				if(num != 0 && num % 3 == 0) cnt++;
+			int temp = i;
+			while(temp > 0) {
+				if(temp % 10 != 0 && (temp % 10) % 3 == 0) cnt++;
+				temp /= 10;
 			}
 		}
+		
 		System.out.println(cnt);
 	}
+
 
 }
