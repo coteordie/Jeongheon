@@ -1,3 +1,5 @@
+### 탐욕알고리즘(Greedy Algorithm)
+<hr>
 <div align="center">
   <table>
     <tr>
