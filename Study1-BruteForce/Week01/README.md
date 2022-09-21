@@ -1,4 +1,5 @@
-# 탐욕알고리즘(Greedy Algorithm)
+### 탐욕알고리즘(Greedy Algorithm)
+### 2022.09.21 ~ 2022.09.27
 <div align="center">
   <table>
     <tr>
