@@ -2,12 +2,13 @@
 ### BruteForce Algorithm
 ### 2022.09.14 ~ 2022.09.21
 ---
-<div align="center">
+<div>
   <table>
     <tr>
-      <td align="center" width="100px;";>순번</td>
+      <td align="center" width="80px;";>순번</td>
       <td align="center" width="100px;";>사이트</td>
       <td align="center" width="100px;";>번호</td>
+      <td align="center" width="150px;";>제목</td>
       <td align="center" width="100px;";>티어</td>
       <td align="center" width="100px;";>답안</td>
       <td align="center" width="100px;";>언어</td>
@@ -22,6 +23,11 @@
       <td align="center">
         <a href="https://www.acmicpc.net/problem/2231">
             2231
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://www.acmicpc.net/problem/2231">
+            분해합
         </a>
       </td>
       <td align="center">
