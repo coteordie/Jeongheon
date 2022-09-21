@@ -8,7 +8,7 @@
       <td align="center" width="80px;";>순번</td>
       <td align="center" width="100px;";>사이트</td>
       <td align="center" width="100px;";>번호</td>
-      <td align="center" width="150px;";>제목</td>
+      <td align="center" width="300px;";>제목</td>
       <td align="center" width="100px;";>티어</td>
       <td align="center" width="100px;";>답안</td>
       <td align="center" width="100px;";>언어</td>
