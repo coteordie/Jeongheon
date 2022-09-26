@@ -23,6 +23,7 @@ public class BOJ_2217 {
 		for(int i = 0 ; i < inputNum; i++) {
 			ropeList.add(Integer.parseInt(br.readLine()));
 		}
+
 		Collections.sort(ropeList);
 		
 		int maxWeight = 0;
