@@ -19,7 +19,6 @@ public class BOJ_2864 {
 		}
 		return min;
 	}
-	
 	private static int sumMax(int num, int max) {
 		for(int i = 0; i < Math.log10(num) + 1; i++) {
 			int temp = (int) (num % Math.pow(10, i + 1) / Math.pow(10, i));
