@@ -2,8 +2,10 @@ package greedy.week01.day04;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 /**
+ * 5와 6의 차이
  * 상근이는 2863번에서 표를 너무 열심히 돌린 나머지 5와 6을 헷갈리기 시작했다.
  * 상근이가 숫자 5를 볼 때, 5로 볼 때도 있지만, 6으로 잘못 볼 수도 있고, 6을 볼 때는, 6으로 볼 때도 있지만, 5로 잘못 볼 수도 있다.
  * 두 수 A와 B가 주어졌을 때, 상근이는 이 두 수를 더하려고 한다. 
@@ -11,38 +13,36 @@ import java.io.InputStreamReader;
  */
 public class BOJ_2864 {
 	
-	private static int sumMin(int num, int min) {
-		for(int i = 0; i < Math.log10(num) + 1; i++) {
-			int temp = (int) (num % Math.pow(10, i + 1) / Math.pow(10, i));
-			if(temp == 6) min += 5 * Math.pow(10, i); // 각 자릿수 중 6 포함 시 5로 치환 후 합산
-			else min += temp * Math.pow(10, i);
+	private static String minmax(String str) {
+		String minStr = "", maxStr = "";
+		for(int i = 0; i < str.length(); i++) {
+			if(str.charAt(i) == '5' || str.charAt(i) == '6') {
+				minStr += "5";
+				maxStr += "6";
+			}
+			else {
+				minStr += str.charAt(i);
+				maxStr += str.charAt(i);
+			}
 		}
-		return min;
-	}
-	private static int sumMax(int num, int max) {
-		for(int i = 0; i < Math.log10(num) + 1; i++) {
-			int temp = (int) (num % Math.pow(10, i + 1) / Math.pow(10, i));
-			if(temp == 5) max += 6 * Math.pow(10, i);
-			else max += temp * Math.pow(10, i);
-		}
-		return max;
+		return minStr + " " + maxStr;
 	}
 	
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		String[] inputArr = br.readLine().split(" ");
-		int A = Integer.parseInt(inputArr[0]);
-		int B = Integer.parseInt(inputArr[1]);
+		StringTokenizer token = new StringTokenizer(br.readLine());
+		String A = token.nextToken();
+		String B = token.nextToken();
 		
-		int min = 0;
-		int max = 0;
-		min = sumMin(A, min);
-		min = sumMin(B, min);
-		max = sumMax(A, max);
-		max = sumMax(B, max);
+		String[] resultA = minmax(A).split(" ");
+		String[] resultB = minmax(B).split(" ");
+		
+		int min = Integer.parseInt(resultA[0]) + Integer.parseInt(resultB[0]);
+		int max = Integer.parseInt(resultA[1]) + Integer.parseInt(resultB[1]);
 		
 		System.out.println(min + " " + max);
+		
 	}
 
 }
