@@ -220,8 +220,8 @@
         <sub><img src="https://user-images.githubusercontent.com/81818730/190453924-710de7f3-0578-4a3e-8f98-dd014210eb3e.png"></sub>
       </td>
       <td align="center">
-        <a href="https://github.com/coteordie/Eunmin/blob/main/Study2-Greedy/Week2/Day7/BOJ_1789.java">
-            Day7
+        <a href="https://github.com/coteordie/Jeongheon/blob/main/Study2-Greedy/Week2/Day8/BOJ_1789.java">
+            Day8
         </a>
       </td>
       <td align="center">
