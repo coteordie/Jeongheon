@@ -29,7 +29,7 @@
         잃어버린 괄호
       </td>
       <td align="center">
-        <sub><img src="https://user-images.githubusercontent.com/81818730/190453924-710de7f3-0578-4a3e-8f98-dd014210eb3e.png"></sub>
+        <sub><img src="https://user-images.githubusercontent.com/81818730/190453932-9fd875e8-79ee-4d3b-8f83-616a092b7c3a.png"></sub>
       </td>
       <td align="center">
         <a href="https://github.com/coteordie/Jeongheon/blob/main/Study2-Greedy/Week3/Day9/BOJ_1541.java">
