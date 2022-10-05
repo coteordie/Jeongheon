@@ -30,6 +30,7 @@ public class BOJ_13164 {
 		}
 		
 		// 학생 키차이
+		// 키차이가 큰 녀석들 기준으로 조를 나눈다.
 		int[] diff = new int[N - 1];
 		for(int i = 1; i < numArr.length; i++) {
 			diff[i - 1] = numArr[i] - numArr[i - 1];
