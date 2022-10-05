@@ -38,11 +38,11 @@ public class BOJ_13164 {
 		
 		Arrays.sort(diff);
 		
-		int result = 0;
+		int sum = 0;
 		for(int i = 0; i < diff.length - (K - 1); i++) {
-			result += diff[i];
+			sum += diff[i];
 		}
-		System.out.println(result);
+		System.out.println(sum);
 	}
 
 }
